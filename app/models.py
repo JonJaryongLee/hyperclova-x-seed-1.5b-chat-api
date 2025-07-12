@@ -40,7 +40,7 @@ def prepare_inputs(messages: list[dict], device: str = "cuda") -> dict:
     )
     return {k: v.to(device) for k, v in encoded.items()}
 
-def generate_response(inputs: dict, max_new_tokens: int = 128) -> str:
+def generate_response(inputs: dict, max_new_tokens: int = 512) -> str:
     """
     입력 텐서로부터 응답을 생성하고 디코딩합니다.
     inputs: prepare_inputs() 리턴값
