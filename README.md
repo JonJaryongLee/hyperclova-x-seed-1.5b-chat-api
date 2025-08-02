@@ -54,7 +54,7 @@
 
 ### ChatCompletion
 
-* **엔드포인트**: `POST /v1/chat/completions`
+* **엔드포인트**: `POST /api/v1/chat/completions`
 
 #### 요청 예시
 
@@ -81,7 +81,7 @@
 import axios from "axios";
 
 async function chatWithLocalModel() {
-  const url = "http://localhost:8000/v1/chat/completions";
+  const url = "http://localhost:8000/api/v1/chat/completions";
   const payload = {
     messages: [
       { role: "system", content: "너는 naver 에서 만든 HyperCLOVA X SEED 1.5B 모델이야." },
